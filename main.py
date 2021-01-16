@@ -55,7 +55,7 @@ class Game:
 
     def draw(self):
         pg.display.set_caption('{:.2f}'.format(self.clock.get_fps()))  # Displays FPS
-        self.window.fill(DARKGREY)
+        self.window.fill(BLACK)
         self.draw_grid()
         for sprite in self.all_sprites:
             self.window.blit(sprite.image, self.camera.apply(sprite))
